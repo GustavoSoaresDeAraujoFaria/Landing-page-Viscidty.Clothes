@@ -1,0 +1,216 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /*ALTERAR COR DEPOIS(OU NÃO)*/
+}
+
+header,
+nav {
+    color: #fff;
+    background-color: #000000;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    background-color: #000000;
+    max-width: 10px;
+    width: 100%;
+}
+
+form input,
+form button {
+    border: #000000;
+    color: #fff;
+    font-size: medium;
+    padding: 5px;
+    border-radius: 5%;
+    text-decoration: none;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+}
+
+form input:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    box-shadow: -2px 1px 25px rgba(255, 255, 255, 0.3);
+}
+
+header i {
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 12px;
+    transition: all 0.3s ease;
+}
+
+header i:hover {
+    color: rgba(255, 255, 255, 0.826);
+}
+
+i {
+    color: rgb(150, 106, 106);
+}
+
+.sale-apexnova {
+    margin-top: 25px;
+    width: 450px;
+    position: fixed;
+    left: 35%;
+}
+
+.sale{
+    display: flex;
+    justify-content: center;
+}
+
+.sale h3{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    width: 100px;
+}
+
+.sale h3:hover{
+    text-shadow: 1px 1px 14px rgba(115, 0, 255, 0.8);
+    cursor: default;
+    transition: all ,.5s ease;
+}
+
+.container-itens {
+    justify-content: center;
+}
+
+.item {
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#newMerchDropdown {
+    color: rgb(255, 255, 255);
+}
+
+#newMerchDropdown:hover {
+    color: rgba(115, 0, 255, 0.8);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.3);
+    /* Sombra leve */
+}
+
+.secoes i {
+    border: none;
+}
+
+.secoes a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.secoes a:hover {
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 1px solid #1970bd;
+    box-shadow: 0 4px 10px -2px rgba(115, 0, 255, 0.8);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.dropdown-item {
+    padding: 15px;
+    background-color: #000000 !important;
+    border: none !important;
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #1a1a1a !important;
+    transition: all 0.3s ease;
+    color: rgba(115, 0, 255, 0.8);
+}
+
+.vitrine-dos-produtos {
+    background-color: #000000;
+    padding-top: 50px;
+}
+
+.vitrine-carousel {
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+}
+
+.vitrine-carousel .container {
+    color: #fff;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.roupa-carousel-img {
+    border-radius: 7% !important;
+    width: 355px !important;
+}
+
+.roupa-carousel-img:hover {
+    transform: scale(1.015);
+    transition: all 0.3s ease;
+}
+
+.container-imagem {
+    position: relative;
+    display: inline-block;
+}
+
+.container-imagem .bi-cart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.container-imagem .bi-cart:hover {
+    background: rgba(58, 0, 130, 0.8);
+}
+
+.container-sizes h6 {
+    padding: 15px;
+    margin-left: 8px;
+    border-radius: 20%;
+    background-color: #000000;
+}
+
+.container-sizes h6:hover {
+    background: rgba(58, 0, 130, 0.8);
+    transition: all 0.6s ease;
+}
+
+
+.barra-de-pesquisa:focus {
+    border-color: rgb(0, 0, 0);
+    background-color: #1a1a1a;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 85px;
+    width: 40px;
+}
