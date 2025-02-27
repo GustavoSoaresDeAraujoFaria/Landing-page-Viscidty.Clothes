@@ -3,7 +3,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
+    background-image: url(./apexnova.webp);
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /*ALTERAR COR DEPOIS(OU NÃO)*/
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 header,
@@ -12,7 +21,7 @@ nav {
     background-color: #000000;
 }
 
-h1 a{
+h1 a {
     text-decoration: none;
     color: #fff;
 }
@@ -54,7 +63,12 @@ header i:hover {
 }
 
 i {
-    color: rgb(150, 106, 106);
+    color: rgb(150, 106, 148);
+}
+
+.carousel-grande img {
+    max-height: 555px;
+    width: 1550px;
 }
 
 .sale-apexnova {
@@ -64,23 +78,22 @@ i {
     left: 35%;
 }
 
-.sale{
+.sale {
     display: flex;
     justify-content: center;
 }
 
-.sale h3{
+.sale h3 {
     color: #fff;
     display: flex;
     justify-content: center;
     left: 50%;
     width: 100px;
+    text-shadow: 1px 1px 14px rgba(115, 0, 255, 0.8);
 }
 
-.sale h3:hover{
-    text-shadow: 1px 1px 14px rgba(115, 0, 255, 0.8);
+.sale h3:hover {
     cursor: default;
-    transition: all ,.5s ease;
 }
 
 .container-itens {
@@ -142,7 +155,6 @@ i {
 }
 
 .vitrine-dos-produtos {
-    background-color: #000000;
     padding-top: 50px;
 }
 
@@ -213,4 +225,62 @@ i {
 .carousel-control-next {
     margin: 85px;
     width: 40px;
+}
+
+.rodape-info-text {
+    cursor: default;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.rodape {
+    background-color: #000000;
+    padding-top: 220px;
+}
+
+.rodape h3 {
+    color: #fff;
+}
+
+.rodape-info-text h5 {
+    color: #999999b5;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.rodape-info-text h5:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: rgba(58, 0, 130, 0.8);
+    transition: all 0.4s ease;
+}
+
+.container-form {
+    margin-left: 50px;
+    padding-bottom: 100px;
+}
+
+.container-form h5 {
+    color: #fff;
+    cursor: default;
+    padding-bottom: 10px;
+}
+
+.email-and-social-media-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icons {
+    padding-right: 50px;
+}
+
+.social-media-icons i {
+    padding-right: 10px;
+}
+
+.social-media-icons i:hover{
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.5s ease;
 }
