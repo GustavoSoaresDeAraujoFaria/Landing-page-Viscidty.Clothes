@@ -15,6 +15,10 @@ body {
     display: none;
 }
 
+header {
+    width: 103%;
+}
+
 header,
 nav {
     color: #fff;
@@ -66,7 +70,10 @@ i {
     color: rgb(150, 106, 148);
 }
 
-.carousel-grande img {
+iframe {
+    display: flex;
+    justify-content: end;
+    height: 815px;
     max-height: 555px;
     width: 1550px;
 }
@@ -113,7 +120,6 @@ i {
 #newMerchDropdown:hover {
     color: rgba(115, 0, 255, 0.8);
     box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.3);
-    /* Sombra leve */
 }
 
 .secoes i {
@@ -125,33 +131,35 @@ i {
     transition: all 0.3s ease;
 }
 
-.secoes a:hover {
-    cursor: pointer;
-    color: #fff;
-    border-bottom: 1px solid #1970bd;
-    box-shadow: 0 4px 10px -2px rgba(115, 0, 255, 0.8);
-}
 
 .dropdown-toggle::after {
-    display: none !important;
+    display: none;
 }
 
 .dropdown-menu {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu h5 {
+    padding-top: 21px;
+}
+
+.dropdown-item img {
+    height: 140px;
+    width: 150px;
 }
 
 .dropdown-item {
     padding: 15px;
-    background-color: #000000 !important;
-    border: none !important;
+    background-color: #000000;
     color: #fff;
 }
 
 .dropdown-item:hover {
-    background-color: #1a1a1a !important;
+    background-color: #a1a1a1bd;
     transition: all 0.3s ease;
-    color: rgba(115, 0, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .vitrine-dos-produtos {
@@ -172,8 +180,8 @@ i {
 }
 
 .roupa-carousel-img {
-    border-radius: 7% !important;
-    width: 355px !important;
+    border-radius: 7%;
+    width: 355px;
 }
 
 .roupa-carousel-img:hover {
@@ -227,6 +235,21 @@ i {
     width: 40px;
 }
 
+.our-gym {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-top:  1px solid  rgba(255, 255, 255, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.our-gym img {
+    justify-content: start;
+}
+
 .rodape-info-text {
     cursor: default;
     justify-content: center;
@@ -234,6 +257,7 @@ i {
 }
 
 .rodape {
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
     background-color: #000000;
     padding-top: 220px;
 }
@@ -266,7 +290,7 @@ i {
     padding-bottom: 10px;
 }
 
-.email-and-social-media-icons{
+.email-and-social-media-icons {
     display: flex;
     justify-content: space-between;
 }
@@ -279,8 +303,12 @@ i {
     padding-right: 10px;
 }
 
-.social-media-icons i:hover{
+.social-media-icons i:hover {
     color: #fff;
     font-size: 25px;
+    transition: all 0.5s ease;
+}
+
+.email-form:hover {
     transition: all 0.5s ease;
 }
