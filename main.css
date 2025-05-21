@@ -55,6 +55,10 @@ form button {
     background-color: rgb(0, 0, 0);
 }
 
+form input {
+    transition: all 0.5s ease;
+}
+
 form input:hover {
     background-color: #1a1a1a;
     color: #fff;
@@ -78,7 +82,6 @@ i {
 
 iframe {
     display: flex;
-    justify-content: end;
     height: 815px;
     max-height: 555px;
     width: 1550px;
@@ -229,12 +232,6 @@ iframe {
     transition: all 0.6s ease;
 }
 
-
-.barra-de-pesquisa:focus {
-    border-color: rgb(0, 0, 0);
-    background-color: #1a1a1a;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
     margin: 85px;
@@ -307,14 +304,163 @@ iframe {
 
 .social-media-icons i {
     padding-right: 10px;
+    transition: all 0.5s ease;
 }
 
 .social-media-icons i:hover {
     color: #fff;
-    font-size: 25px;
+}
+
+.email-form {
     transition: all 0.5s ease;
 }
 
-.email-form:hover {
-    transition: all 0.5s ease;
+@media screen and (max-width: 785px) {
+
+body {
+    font-size: 14px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+header, nav {
+    background-color: #000000;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+form input,
+form button {
+    width: auto;
+    flex: 1 1 auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #000000;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+form input:hover {
+    background-color: #1a1a1a;
+    box-shadow: -2px 1px 25px rgba(255, 255, 255, 0.3);
+}
+
+.vitrine-carousel {
+    display: none;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    justify-content: center; /* centraliza o scroll container */
+}
+
+.vitrine-carousel .container {
+    color: #fff;
+    cursor: pointer;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.roupa-carousel-img {
+    width: 100%;
+    border-radius: 7%;
+    transition: transform 0.3s ease;
+}
+
+.roupa-carousel-img:hover {
+    transform: scale(1.015);
+}
+
+/* Remove scroll padrão */
+.vitrine-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.vitrine-carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Ajustes para iframe */
+iframe {
+    width: 100%;
+    max-height: 350px; /* menor no mobile */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Outros ajustes responsivos comuns */
+.sale-apexnova {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    left: auto;
+}
+
+.sale {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sale h3 {
+    width: auto;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 14px rgba(115, 0, 255, 0.8);
+}
+
+.container-itens {
+    justify-content: center;
+}
+
+/* Container sizes e outros elementos com padding menor */
+.container-sizes h6 {
+    padding: 8px;
+    margin-left: 0;
+}
+
+/* Rodapé e texto */
+.rodape {
+    padding-top: 80px;
+}
+
+.rodape h3 {
+    font-size: 1.2rem;
+}
+
+.rodape-info-text h5 {
+    font-size: 0.9rem;
+    padding: 4px;
+}
+
+.social-media-icons {
+    padding-right: 15px;
+}
+
+.social-media-icons i {
+    padding-right: 6px;
+}
+
+/* Ícones no header */
+header i {
+    margin: 8px;
+    font-size: 1.2rem;
+}
+
+header i:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    
 }
